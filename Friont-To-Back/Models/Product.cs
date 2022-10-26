@@ -1,11 +1,11 @@
 ﻿namespace Friont_To_Back.Models
 {
-    public class Product
+    public class Product:BaseClass
     {
-        public Guid Id { get; set; }
         public string? Name { get; set; }
-        public double Price { get; set; }
-        public string?  Title { get; set; }
-        public string? ImgUrl { get; set; }
+        public int Price { get; set; }
+        public string? ImageUrl { get; set; }
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
     }
 }
